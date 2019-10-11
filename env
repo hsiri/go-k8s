@@ -1,0 +1,4 @@
+KOPS_STATE_STORE=s3://demo.k8s.local
+NAME=demo.k8s.local
+APP_HOST=http://demo.k8s.local
+APP_PORT=8080

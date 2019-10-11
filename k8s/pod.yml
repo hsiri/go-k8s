@@ -1,0 +1,10 @@
+apiVersion: v1   #required field - kubernetes api version
+kind: Pod             #required field - What kind of object you want to create
+metadata:             #required field - Data that helps uniquely identify the object,ncluding a name string, UID, and optional namespace
+  name: go-k8s
+  labels:             #key-value pair to organize kubernetes objects
+    name: go-k8s
+spec:                 #describes your desired state for the object–the characteristics that you want the object to have
+  containers:
+  - name: go-k8s
+    image: hsiri/go-k8s:1.0.0 #image from dockerhub
